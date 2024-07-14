@@ -1,0 +1,5 @@
+vlib work
+vlog -f sourcefile.txt
+vsim -voptargs=+acss SPI_TOP_tb
+add wave *
+run -all
