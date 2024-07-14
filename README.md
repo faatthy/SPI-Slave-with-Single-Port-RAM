@@ -12,20 +12,12 @@ The project consists of the following:-
 		+ SPI.v: design of SPI block
 		+ RAM.v: design of RAM block
 		+ instantiation.v: top module
-		+ run.tcl: tcl file to run design on Vivado and extract elaboration_shcematic.pdf, synthesized_shcematic.pdf, utilization report and report timing
+		+ run.txt: txt file to run design on Vivado and extract elaboration_shcematic.pdf, synthesized_shcematic.pdf, utilization report and report timing
 			   in addition to run  elaboration, synthesis, implementation and generates bitstream file
 	+ Testbench folder:
 		+ SPI.v: Verilog file represent SPI Slave block
     		+ RAM.v: Verilog file represent Single Port Async RAM
-    		+ SystemLevel.v: Verilog file instantiate the two blocks RAM and SPI
-		+ ram.dat: memory for testbench
-2. schematic pdf:
-    + SPI schematic: schematic for the block after synthesis on Vivado 
-    + RAM schematic: schematic for the block after synthesis on Vivado 
-    + System Level schematic: schematic for the block after synthesis on Vivado
-4. basys_master.xdc: a constrain file for the target FPGA
-5. bitstream file: bitstream file
-6. netlist file: netlist file from Vivado
+
 
 ## SPI Slave Module
 The SPI slave module is responsible for receiving data from the master device and interacting with the RAM module. It has the following ports:
@@ -79,7 +71,7 @@ The single port asynchronous RAM module implements a memory block with a single 
 ![FSM](https://drive.google.com/uc?export=view&id=1hf9omcZ275hoKuVw7Ol5CuG-cZuh6jIJ)
 
 ## Schematic VIVADO
-![Screenshot 2024-07-14 082734](https://github.com/user-attachments/assets/b85acff7-a6cc-4331-8ce6-8b418b51a1fa)
+![Screenshot 2024-07-14 082734](https://github.com/user-attachments/assets/18213a73-801a-41c6-aa22-9779e00402d3)
 
 ## Waveform
-![Screenshot 2024-07-14 084220](https://github.com/user-attachments/assets/f0dab648-eb94-4b82-bf64-0a390fafa1cb)
+![Screenshot 2024-07-14 084220](https://github.com/user-attachments/assets/1b4b2b64-3c91-47fa-bb89-b587175c269a)
